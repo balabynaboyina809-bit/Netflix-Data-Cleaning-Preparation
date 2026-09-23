@@ -1,1 +1,112 @@
+NETFLIX DATA CLEANING & PREPARATION
+====================================
 
+Dataset: Netflix Movies and TV Shows
+Standard dataset size: 8,807 rows x 12 columns
+
+STEP 1: IMPORT DATASET
+----------------------
+Dataset imported successfully.
+
+Shape:
+Rows    = 8807
+Columns = 12
+
+Columns:
+show_id
+type
+title
+director
+cast
+country
+date_added
+release_year
+rating
+duration
+listed_in
+description
+
+STEP 2: MISSING VALUES
+----------------------
+Missing values BEFORE cleaning:
+
+show_id           0
+type              0
+title             0
+director       2634
+cast            825
+country         831
+date_added       10
+release_year      0
+rating            4
+duration          3
+listed_in         0
+description       0
+
+Missing values are handled by replacing unavailable values with:
+Unknown
+
+Missing values AFTER cleaning:
+
+show_id           0
+type              0
+title             0
+director          0
+cast              0
+country           0
+date_added        0
+release_year      0
+rating            0
+duration          0
+listed_in         0
+description       0
+
+STEP 3: DUPLICATES AND FORMATTING
+--------------------------------
+Duplicate rows before removal:
+0
+
+Duplicate rows after removal:
+0
+
+Text formatting:
+Successfully cleaned by removing leading/trailing whitespace.
+
+STEP 4: STANDARDIZATION
+-----------------------
+Type values:
+
+Movie       6131
+TV Show     2676
+
+Standardized Type values:
+Movie
+TV Show
+
+Rating values were stripped and standardized to uppercase.
+
+Country values were cleaned for consistent spacing around commas.
+
+A new analysis column was created:
+primary_country
+
+STEP 5: EXPORT
+--------------
+Output file:
+netflix_cleaned.csv
+
+Final dataset:
+8,807 rows
+13 columns
+
+The 13th column is:
+primary_country
+
+PROJECT STATUS
+--------------
+Data import:        COMPLETED
+Missing values:     COMPLETED
+Duplicate removal:  COMPLETED
+Formatting cleanup: COMPLETED
+Standardization:    COMPLETED
+Export:             COMPLETED
