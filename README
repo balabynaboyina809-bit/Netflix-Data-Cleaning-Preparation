@@ -1,0 +1,43 @@
+# Netflix Data Analysis Using Python — Complete Project
+
+## Dataset
+Public Netflix titles dataset with the standard 12 fields. A Kaggle description of the widely used version reports 8,807 rows and 12 columns. The project code uses a public GitHub copy of that dataset.
+
+Dataset URL:
+https://raw.githubusercontent.com/japnitahuja/netflix-data-analysis/main/netflix_titles.csv
+
+## Files
+- `Netflix_Data_Analysis_Project.ipynb` — Jupyter/Google Colab notebook
+- `netflix_project.py` — complete Python script
+- `Project_Report.docx` — submission-ready report
+- `Project_Report.pdf` — PDF version of the report
+
+## How to run
+### Google Colab
+1. Open Google Colab.
+2. Upload `Netflix_Data_Analysis_Project.ipynb`.
+3. Run all cells.
+4. The notebook downloads the dataset from the public URL.
+5. `netflix_cleaned.csv` is created.
+
+### Local Python
+Install:
+`pip install pandas numpy matplotlib seaborn`
+
+Then run:
+`python netflix_project.py`
+
+The script creates a `netflix_project_output` folder containing the cleaned CSV, summary tables and charts.
+
+## Main cleaning decisions
+- Remove exact duplicate rows.
+- Trim whitespace in text fields.
+- Standardize `type`.
+- Preserve rows with missing director/cast/country by using `Unknown` rather than dropping large portions of the data.
+- Convert `date_added` to datetime.
+- Create `year_added`.
+- Convert duration to numeric `duration_value` plus `duration_unit`.
+- Extract `primary_genre` and `primary_country` for simple analysis.
+
+## Important note
+The dataset is a historical snapshot rather than a live Netflix catalog, so conclusions describe the dataset snapshot and should not be presented as current Netflix statistics.
