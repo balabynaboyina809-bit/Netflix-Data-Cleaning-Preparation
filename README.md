@@ -83,14 +83,4 @@ project_outputs.txt	Console outputs/results
 requirements.txt	Python libraries required
 
 
-How to Run
-1. Download or clone this repository.
-2. Put netflix_titles.csv in the same folder as the Python file.
-3. Install the required packages:
-pip install -r requirements.txt
-4. Run:
-python netflix_data_cleaning.py
-5. The program creates:
-netflix_cleaned.csv
-Important Note
-The numerical results in project_outputs.txt describe the commonly used 8,807-row Netflix titles dataset. If a different version of the dataset is supplied, row counts or missing-value counts may differ.
+How to Run - i used pycharm for programming.
