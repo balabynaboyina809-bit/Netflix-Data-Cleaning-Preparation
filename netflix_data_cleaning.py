@@ -1,17 +1,3 @@
-"""
-Netflix Data Cleaning & Preparation
- Data Analysis Using Python
-
-Workflow:
-1. Import dataset
-2. Identify and handle missing values
-3. Remove duplicates and formatting inconsistencies
-4. Standardize Country, Rating and Type
-5. Export cleaned dataset
-
-Place netflix_titles.csv in the same folder before running.
-"""
-
 import pandas as pd
 
 INPUT_FILE = "netflix_titles.csv"
