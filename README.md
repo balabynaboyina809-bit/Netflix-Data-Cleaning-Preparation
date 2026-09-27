@@ -38,7 +38,7 @@ The dataset is imported using the Pandas `read_csv()` function.
 The program uses:
 
 ```python
-INPUT_FILE = "Dataset.csv"
+INPUT_FILE = "Dataset_NotGiven_Empty.csv"
 ```
 
 The dataset is then loaded into a Pandas DataFrame:
