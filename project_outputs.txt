@@ -23,16 +23,16 @@ STEP 2: MISSING VALUES
 =================================================================
 
 Missing values BEFORE cleaning:
-show_id         0
-type            0
-title           0
-director        0
-country         0
-date_added      0
-release_year    0
-rating          0
-duration        0
-listed_in       0
+show_id            0
+type               0
+title              0
+director        2588
+country          287
+date_added         0
+release_year       0
+rating             0
+duration           0
+listed_in          0
 dtype: int64
 
 Missing values AFTER cleaning:
@@ -85,7 +85,7 @@ United States     3240
 India             1057
 United Kingdom     638
 Pakistan           421
-Not Given          287
+Unknown            287
 Canada             271
 Japan              259
 South Korea        214
