@@ -1,6 +1,6 @@
 import pandas as pd
 
-INPUT_FILE = "netflix_titles.csv"
+INPUT_FILE = "Dataset.csv"
 OUTPUT_FILE = "netflix_cleaned.csv"
 
 # ============================================================
