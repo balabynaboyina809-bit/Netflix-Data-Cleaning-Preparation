@@ -1,22 +1,22 @@
-
+C:\Users\Admin\PycharmProjects\pythonProject3\.venv\Scripts\python.exe C:\Users\Admin\PycharmProjects\pythonProject3\netflix.py 
 =================================================================
 STEP 1: IMPORT DATASET
 =================================================================
 Dataset imported successfully.
-Shape: (15, 12)
+Shape: (8790, 10)
 
 Columns:
-['show_id', 'type', 'title', 'director', 'cast', 'country', 'date_added', 'release_year', 'rating', 'duration', 'listed_in', 'description']
+['show_id', 'type', 'title', 'director', 'country', 'date_added', 'release_year', 'rating', 'duration', 'listed_in']
 
 First 5 rows:
-  show_id  ...                                        description
-0      s1  ...  As her father nears the end of his life, filmm...
-1      s2  ...  After crossing paths at a party, a Cape Town t...
-2      s3  ...  To protect his family from a powerful drug lor...
-3      s4  ...  Feuds, flirtations and toilet talk go down amo...
-4      s5  ...  An earnest student and his friends navigate ca...
+  show_id     type  ...  duration                                          listed_in
+0      s1    Movie  ...    90 min                                      Documentaries
+1      s3  TV Show  ...  1 Season  Crime TV Shows, International TV Shows, TV Act...
+2      s6  TV Show  ...  1 Season                 TV Dramas, TV Horror, TV Mysteries
+3     s14    Movie  ...    91 min                 Children & Family Movies, Comedies
+4      s8    Movie  ...   125 min   Dramas, Independent Movies, International Movies
 
-[5 rows x 12 columns]
+[5 rows x 10 columns]
 
 =================================================================
 STEP 2: MISSING VALUES
@@ -26,15 +26,13 @@ Missing values BEFORE cleaning:
 show_id         0
 type            0
 title           0
-director        5
-cast            4
-country         8
+director        0
+country         0
 date_added      0
 release_year    0
 rating          0
 duration        0
 listed_in       0
-description     0
 dtype: int64
 
 Missing values AFTER cleaning:
@@ -42,14 +40,12 @@ show_id         0
 type            0
 title           0
 director        0
-cast            0
 country         0
 date_added      0
 release_year    0
 rating          0
 duration        0
 listed_in       0
-description     0
 dtype: int64
 
 =================================================================
@@ -65,27 +61,36 @@ STEP 4: STANDARDIZATION
 
 Standardized Type values:
 type
-Tv Show    9
-Movie      6
+Movie      6126
+Tv Show    2664
 Name: count, dtype: int64
 
 Top Rating values:
 rating
-TV-MA    10
-PG-13     2
-PG        1
-TV-14     1
-TV-PG     1
+TV-MA    3205
+TV-14    2157
+TV-PG     861
+R         799
+PG-13     490
+TV-Y7     333
+TV-Y      306
+PG        287
+TV-G      220
+NR         79
 Name: count, dtype: int64
 
 Top Primary Country values:
 primary_country
-Unknown           8
-United States     3
-South Africa      1
-India             1
-United Kingdom    1
-Germany           1
+United States     3240
+India             1057
+United Kingdom     638
+Pakistan           421
+Not Given          287
+Canada             271
+Japan              259
+South Korea        214
+France             213
+Spain              182
 Name: count, dtype: int64
 
 =================================================================
@@ -93,7 +98,7 @@ STEP 5: EXPORT CLEANED DATASET
 =================================================================
 Cleaned dataset exported successfully.
 Output file: netflix_cleaned.csv
-Final shape: (15, 13)
+Final shape: (8790, 11)
 
 Project completed successfully.
 
